@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  html
+  body
+    #users
+      input.search(placeholder='Search')
+      button.sort(data-sort='name')
+        | Sort
+      ul.list
+
+      button.btn.btn-danger(type='button') monitored
+      button.btn.btn-warning(type='button') sane
+      button.btn.btn-info(type='button') forQA
+      button.btn.btn-success(type='button') atQA
